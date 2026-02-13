@@ -67,7 +67,49 @@ ul, li {
 
 main {
     height: 70vh;
-    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-principal {
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.container-principal h2 {
+    font-weight: normal;
+    font-size: 3.4rem;
+}
+
+.palavra-curso {
+    color: #3347B0;
+}
+
+.container-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.botao-curso {
+    color: #FFF;
+    background-color: #3347B0;
+    width: 25rem;
+    height: 12rem;
+    font-size: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 10px 10px 4px rgb(151, 151, 151);
+    transition: 1s;
+}
+
+.botao-curso:hover {
+    transform: scale(1.07);
 }
 
 /* rodape */
