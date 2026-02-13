@@ -12,6 +12,7 @@
 
 button:hover, a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 ul, li {
@@ -63,7 +64,7 @@ ul, li {
     font-size: 2rem;
 }
 
-/* conteudo */
+/* main geral */
 
 main {
     height: 70vh;
@@ -71,6 +72,8 @@ main {
     align-items: center;
     justify-content: space-around;
 }
+
+/* Home */
 
 .container-principal {
     width: 27rem;
@@ -111,6 +114,10 @@ main {
 .botao-curso:hover {
     transform: scale(1.07);
 }
+
+/* Alunos */
+
+/* Detalhe Aluno */
 
 /* rodape */
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./js/main.js" defer type="module"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
@@ -11,9 +12,11 @@
 </head>
 <body>
     <header class="cabecalho">
-        <div class="cabecalho-titulo">
-            <img src="./img/logo-image.png" alt="Logo Lion School">
-            <h1>Lion School</h1>
+        <div>
+            <a class="cabecalho-titulo" href="#">
+                <img src="./img/logo-image.png" alt="Logo Lion School">
+                <h1>Lion School</h1>
+            </a>
         </div>
         <div class="cabecalho-voltar">
             <a href="#" class="botao-voltar">
@@ -23,7 +26,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="conteudo-principal">
         <div class="container-principal">
             <h2>Escolha um <span class="palavra-curso">curso</span> para gerenciar</h2>
             <img src="./img/devices.svg" alt="Dispositivos como notebook, smartphone, etc.">
@@ -32,11 +35,11 @@
             <img src="./img/studant.svg" alt="Desenho de uma estudante">
         </div>
         <div class="container-botoes">
-            <button class="botao-curso">
+            <button id="botao-ds" class="botao-curso">
                 <img src="./img/ds.svg" alt="Icone curso Desenvolvimento de Sistemas">
                 <span>DS</span>
             </button>
-            <button class="botao-curso">
+            <button id="botao-redes" class="botao-curso">
                 <img src="./img/redes.svg" alt="Icone curso Redes de Computadores">    
                 <span>REDES</span>
             </button>
