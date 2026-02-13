@@ -1,0 +1,101 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background: none;
+}
+
+/* padrao para todo o site */
+
+button:hover, a {
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* cabecalho */
+
+.cabecalho {
+    height: 13vh;
+    background-color: #3347B0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-titulo {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    color: #FFF;
+}
+
+.cabecalho-titulo h1 {
+    max-width: 1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.cabecalho-voltar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    color: #FFF;
+    background: none;
+    text-decoration: none;
+    border: none;
+}
+
+.botao-voltar span {
+    max-width: 1rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+/* conteudo */
+
+main {
+    height: 70vh;
+    flex: 1;
+}
+
+/* rodape */
+
+.rodape {
+    height: 17vh;
+    background-color: #3347B0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+}
+
+.rodape-info {
+    padding: 1rem 0 0 5rem;
+}
+
+.rodape-info ul li {
+    padding: 0.4rem;
+}
+
+.rodape-info ul li span {
+    padding-left: 0.7rem;
+}
+
+.rodape-social ul {
+    width: 21rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
