@@ -30,7 +30,9 @@ const appFrontEnd = require("../js/main.js");
 // CENARIO DE TESTE 01: Teste de regra de negócio na interface (limite de 100%)
 test("Validação da altura da barra para notas que ultrapassam 100:", function(){
 
-    // dado falso
+    // dado falso (Mock)
+    // Em testes de software um Mock é uma versão falsa de uma função, 
+    // criada especificamente para o ambiente de testes.
     const dadosMateria = { categoria: "Matemática", valor: 150 };
     // rodando a função
     const elementoCriado = appFrontEnd.criarBarraGrafico(dadosMateria);
@@ -47,8 +49,7 @@ test("Validação da altura da barra para notas que ultrapassam 100:", function(
 // CENARIO DE TESTE 02: Teste de criação de card de aluno
 test("Validação da criação do card com os dados do aluno:", function(){
 
-    // Em testes de software um Mock é uma versão falsa de uma função, 
-    // criada especificamente para o ambiente de testes.
+    // dado falso (Mock)
     const alunoMock = { nome: "João Silva", foto: "joao.png" };
     
     const card = appFrontEnd.criarCard(alunoMock);
