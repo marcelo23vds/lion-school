@@ -73,8 +73,6 @@ main {
     justify-content: space-around;
 }
 
-/* Home */
-
 .container-principal {
     width: 27rem;
     display: flex;
@@ -114,6 +112,35 @@ main {
 .botao-curso:hover {
     transform: scale(1.07);
 }
+
+.tela-lista-alunos {
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden; 
+}
+
+.titulo-curso {
+    text-align: center;
+    color: #3347B0;
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    flex-shrink: 0; /* nao permite que o titulo seja esmagado */
+}
+
+.container-cards {
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 1rem 2rem;
+    overflow-y: auto; 
+}
+
 
 /* Card do Aluno */
 .card {
@@ -273,32 +300,4 @@ main {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
-
-.tela-lista-alunos {
-    width: 100%;
-    height: 100%; 
-    display: flex;
-    flex-direction: column; 
-    overflow: hidden; 
-}
-
-.titulo-curso {
-    text-align: center;
-    color: #3347B0;
-    font-size: 2rem;
-    margin: 1rem 0;
-    text-transform: uppercase;
-    flex-shrink: 0; /* nao permite que o titulo seja esmagado */
-}
-
-.container-cards {
-    flex: 1; 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-content: flex-start;
-    padding: 1rem 2rem;
-    overflow-y: auto; 
 }

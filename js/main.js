@@ -8,7 +8,7 @@ const getAlunos = async (cursoId) => {
     const url = `${BASE_URL}/alunos?curso_id=${cursoId}`;
     const response = await fetch(url);
     const data = await response.json();
-    return data.alunos || data;
+    return data;
 }
 
 const criarCard = (aluno) => {
@@ -187,3 +187,9 @@ const configurarLogo = () => {
 
 configurarLogo()
 configurarBotoesHome()
+
+module.exports = {
+    getAlunos,
+    criarCard,
+    criarBarraGrafico
+}
