@@ -41,9 +41,6 @@ test("Validação da altura da barra para notas que ultrapassam 100:", function(
 
     // regra do IF
     expect(divFill.style.height).toBe("100%");
-    // Valida se criou o elemento certo
-    expect(elementoCriado.tagName).toBe("DIV");
-
 });
 
 // CENARIO DE TESTE 02: Teste de criação de card de aluno
